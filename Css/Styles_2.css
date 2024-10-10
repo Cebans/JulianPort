@@ -114,8 +114,7 @@ footer {
 
     section {
         padding: 10px; /* Reduce aún más el padding */
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 20px;
     }
 
     .thumbnail {
