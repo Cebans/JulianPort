@@ -58,6 +58,7 @@ ul li {
     justify-content: center;
     flex-wrap: wrap; /* Permite que los thumbnails se envuelvan en varias líneas */
     margin-top: 20px;
+    
 }
 
 .thumbnail {
@@ -93,6 +94,8 @@ footer {
     section {
         width: 95%; /* Aumenta el ancho de la sección en pantallas pequeñas */
         padding: 15px; /* Reduce el padding */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #video-principal video {

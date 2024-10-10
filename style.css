@@ -136,7 +136,7 @@ body {
 }
 
 .cv-btn:hover {
-    background-color: #5c0140; /* Cambio de color al pasar el mouse */
+    background-color: #C8D22C; /* Cambio de color al pasar el mouse */
 }
 
 /* Redes sociales */
@@ -155,7 +155,7 @@ body {
 /* Sección de Proyectos */
 #proyectos {
     padding: 10px 0;
-    background-color: #09002e;
+    background-color: #192C4E;
     margin: 30px;
     border-radius: 20px;
     margin-left: 20px;
