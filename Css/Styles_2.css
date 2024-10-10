@@ -1,0 +1,119 @@
+/* Estilo básico para toda la página */
+body {
+    background-color: #003366; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #004080;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#descripcion-proyecto p {
+    text-align: justify; /* Texto justificado */
+    line-height: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+#video-principal {
+    text-align: center;
+}
+
+#video-principal video {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    max-width: 450px; /* Limita el ancho máximo */
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+/* Estilo de los thumbnails */
+#thumbnail-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los thumbnails se envuelvan en varias líneas */
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00264d;
+    color: white;
+}
+/* Consultas de medios para mejorar la responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    section {
+        width: 95%; /* Aumenta el ancho de la sección en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    #video-principal video {
+        max-width: 100%; /* Permite que el video ocupe todo el ancho disponible */
+    }
+
+    .thumbnail {
+        width: 80px; /* Reduce el tamaño de los thumbnails en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; /* Ajusta aún más el tamaño del título para dispositivos muy pequeños */
+    }
+
+    section {
+        padding: 10px; /* Reduce aún más el padding */
+    }
+
+    .thumbnail {
+        width: 60px; /* Reduce más el tamaño de los thumbnails en pantallas muy pequeñas */
+    }
+}
+

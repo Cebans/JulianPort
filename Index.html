@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Banner superior -->
+    <section id="banner">
+        <img src="img/Banner_Linkedin.png" alt="Banner">
+    </section>
+    
+    <!-- Carrusel de imágenes -->
+<section id="carrusel">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <video width="450" height="300" autoplay loop>
+                <source src="Vid/Dinamicidad.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="carousel-slide">
+            <video width="450" height="300" autoplay loop>
+                <source src="VID/Innovación.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="carousel-slide">
+            <video width="450" height="300" autoplay loop>
+                <source src="Vid/Profesionalismo 2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="carousel-slide">
+            <video width="450" height="300" autoplay loop>
+                <source src="Vid/Dinamicidad.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="carousel-slide">
+            <video width="450" height="300" autoplay loop>
+                <source src="Vid/Innovación.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="carousel-slide">
+            <video width="450" height="300" autoplay loop>
+                <source src="Vid/Profesionalismo 2.mp4" type="video/mp4">
+            </video>
+        </div>
+</div>
+    </div>
+    <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+</section>
+
+    <!-- Sección de Descripción del Perfil y Caja de Perfil -->
+    <section id="contenido">
+        <!-- Descripción del perfil -->
+        <div id="descripcion-perfil">
+            <h2>Sobre mí</h2>
+            <div class="container">
+                <div class="column">
+                    <p>
+                        Mi pasión por el mundo audiovisual me impulsa a fusionar la creatividad con la estrategia, 
+                explorando nuevas formas de contar historias impactantes. Como Ingeniero en Multimedia, 
+                combino mis habilidades en la producción audiovisual con estrategias de marketing digital 
+                para crear campañas que no solo capturen la atención visual, sino que también logren resultados comerciales efectivos.
+                    </p>
+                </div>
+                <div class="column">
+                    <p>
+                        Lidero proyectos que integran la planificación, las diferentes fases de producción y la ejecución de campañas, 
+                        uniendo la narrativa visual con el marketing para maximizar el impacto. Mi enfoque está en alcanzar 
+                        resultados que impulsen tanto la creatividad como la efectividad comercial.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caja de Perfil con Foto y Redes Sociales -->
+        <div id="perfil">
+            <div class="perfil-container">
+                <img src="img/Foto_perfil.png" alt="Foto de Perfil" class="foto-perfil">
+                <h1>Julián Esteban Rodríguez Cepeda</h1>
+                <p>Ingeniero en Multimedia | Filmmaker | Marketer</p>
+
+                <a href="Docs/CV Julián Rodríguez.pdf" target="_blank">
+                    <button class="cv-btn">Ver CV</button>
+                </a>
+
+                <div class="redes-sociales">
+                    <!-- Botón para LinkedIn -->
+                    <a href="https://www.linkedin.com/in/juli%C3%A1n-esteban-rodr%C3%ADguez-cepeda-63a6b7272/" target="_blank" class="social-btn">
+                        <img src="img/logolinked.png" alt="LinkedIn">
+                    </a>
+                    <!-- Otros botones de redes -->
+                    <a href="https://www.behance.net/julianrodrigu44" target="_blank" class="social-btn">
+                        <img src="img/Behance-Logo (1).png" alt="img_Behance">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2 style="color: azure; margin: 20px;">Proyectos</h2>
+        <div class="proyectos-container">
+            <!-- Proyecto 1 -->
+            <div class="proyecto" onclick="window.open('Pages/Modelado_3D.html', '_blank')">
+                <video width="450" height="300" controls>
+                    <source src="Vid/Animación de Personaje.mp4" type="video/mp4">
+                </video>
+                <h3>Producción 3D de identidad visual</h3>
+                <p style="text-align: center;">El proyecto consiste en un modelado 3D desarrollado a partir de la identidad visual creada por una diseñadora gráfica. Para su realización, se consideraron cuidadosamente los colores, la tipografía y el estilo característico de su marca personal.</p>
+            </div>
+    
+            <!-- Proyecto 2 -->
+            <div class="proyecto" onclick="window.open('Pages/Visage Divine.html', '_blank')">
+                <video width="450" height="300" controls muted>
+                    <source src="VID/VISAGE DIVINE.mp4" type="video/mp4">
+                </video>
+                <h3>Promocional de marca “VISAGE DIVINE”</h3>
+                <p style="text-align: center;">El proyecto consiste en un modelado 3D desarrollado a partir de la identidad visual creada por una diseñadora gráfica. Para su realización, se consideraron cuidadosamente los colores, la tipografía y el estilo característico de su marca personal.</p>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="proyecto" onclick="window.open('Pages/POKI.html', '_blank')">
+                <img src="img/Escenario 2.png" alt="Imagen escenario">
+                <h3>Preproducción para videojuego "POKI"</h3>
+                <p style="text-align: center;">Desceripción de lo hecho</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Modal para mostrar detalles del proyecto -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h3 id="modal-titulo"></h3>
+        <img id="modal-imagen" src="" alt="Imagen del proyecto" style="width: 100%; height: auto;"/>
+        <p id="modal-descripcion"></p>
+    </div>
+</div>
+</body>
+<footer>
+    <p>© 2024 Julián Rodríguez - Proyecto de Stop Motion</p>
+</footer>
+</html>
