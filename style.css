@@ -91,7 +91,7 @@ body {
 
 #perfil {
     background-color: #030700;
-    color: rgb(126, 111, 255);
+    color: #C8D22C;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
@@ -124,7 +124,7 @@ body {
 }
 .cv-btn {
     background-color: #192C4E; /* Color azul */
-    color: white;
+    color: #C8D22C;
     padding: 10px 20px;
     font-size: 16px;
     margin: 20px 0; /* Añade margen para separarlo del texto de arriba */
@@ -137,6 +137,7 @@ body {
 
 .cv-btn:hover {
     background-color: #C8D22C; /* Cambio de color al pasar el mouse */
+    color: #192C4E;
 }
 
 /* Redes sociales */
