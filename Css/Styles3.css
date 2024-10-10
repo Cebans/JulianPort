@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 body {
-    background-color: #01172e; /* Color de fondo azul */
+    background-color: #C8D22C; /* Color de fondo azul */
     color: white; /* Color del texto blanco */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
     margin: 0;
     padding: 0;
 }
@@ -19,7 +21,7 @@ section {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #3b0063;
+    background-color: #192C4E;
     border-radius: 8px;
     margin-bottom: 20px;
 }
