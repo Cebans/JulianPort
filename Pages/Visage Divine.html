@@ -12,6 +12,43 @@
         <h1 style="color: #192C4E;">Promocional de marca “VISAGE DIVINE”</h1>
     </header>
 
+    <section id="video-principal">
+        <h2>Video del Proyecto</h2>
+        <div class="video-container">
+            <video controls muted>
+                <source src="../Vid/VISAGE DIVINE.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    
+        <div id="thumbnail-container">
+            <button onclick="changeVideo('proyecto1-video.mp4')">
+                <img src="../img/Tienda terminada.png" alt="Thumbnail 1" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
+            </button>
+            <button onclick="changeVideo('proyecto1-extra1.mp4')">
+                <img src="../img/RENDER ILUM.png" alt="Thumbnail 2" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
+            </button>
+            <button onclick="changeVideo('proyecto1-extra2.mp4')">
+                <img src="../img/Render pestañina.png" alt="Thumbnail 3" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
+            </button>
+            <button onclick="changeVideo('proyecto1-extra3.mp4')">
+                <img src="../img/Texturas.png" alt="Thumbnail 4" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
+            </button>
+            <button onclick="changeVideo('proyecto1-extra4.mp4')">
+                <img src="../img/Texturas 2.png" alt="Thumbnail 5" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
+            </button>
+            <a href="https://www.behance.net/gallery/209868423/Promocional-de-marca-VISAGE-DIVINE" target="guia a behance" class="social-btn">
+                <img src="../img/Behance-logo.png" alt="Behance" class="social-icon">
+            </a>
+        </div>
+    
+        <!-- Modal para la imagen expandida -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="expanded-img" alt="Expanded Image">
+            <div id="caption"></div>
+        </div>
+    </section>
     <section id="descripcion-proyecto">
         <h2>Descripción del Proyecto</h2>
         <p>Este proyecto consistió en la creación de un video promocional para la marca de cosméticos Visage Divine, donde se modelaron productos y una tienda, se generaron secuencias animadas y se realizaron renders con una estética realista, combinando todos los elementos en la postproducción para lograr un resultado visualmente atractivo y de alta calidad.</p>
@@ -52,43 +89,7 @@
         }
     </style>
 
-<section id="video-principal">
-    <h2>Video del Proyecto</h2>
-    <div class="video-container">
-        <video controls muted>
-            <source src="../Vid/VISAGE DIVINE.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-        </video>
-    </div>
 
-    <div id="thumbnail-container">
-        <button onclick="changeVideo('proyecto1-video.mp4')">
-            <img src="../img/Tienda terminada.png" alt="Thumbnail 1" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
-        </button>
-        <button onclick="changeVideo('proyecto1-extra1.mp4')">
-            <img src="../img/RENDER ILUM.png" alt="Thumbnail 2" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
-        </button>
-        <button onclick="changeVideo('proyecto1-extra2.mp4')">
-            <img src="../img/Render pestañina.png" alt="Thumbnail 3" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
-        </button>
-        <button onclick="changeVideo('proyecto1-extra3.mp4')">
-            <img src="../img/Texturas.png" alt="Thumbnail 4" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
-        </button>
-        <button onclick="changeVideo('proyecto1-extra4.mp4')">
-            <img src="../img/Texturas 2.png" alt="Thumbnail 5" class="thumbnail" onclick="event.stopPropagation(); openModal(this.src);">
-        </button>
-        <a href="https://www.behance.net/gallery/209868423/Promocional-de-marca-VISAGE-DIVINE" target="guia a behance" class="social-btn">
-            <img src="../img/Behance-logo.png" alt="Behance" class="social-icon">
-        </a>
-    </div>
-
-    <!-- Modal para la imagen expandida -->
-    <div id="modal" class="modal" onclick="closeModal()">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="expanded-img" alt="Expanded Image">
-        <div id="caption"></div>
-    </div>
-</section>
             
             <style>
                 .social-icon {

@@ -98,6 +98,7 @@ body {
     border: 2px solid #C8D22C;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
     position: relative; /* Asegura que el contenido se posicione sobre el fondo */
+    margin: 15px;
 }
 #perfil::before {
     content: "";
