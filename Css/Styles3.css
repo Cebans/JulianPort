@@ -62,7 +62,7 @@ video {
 }
 
 .thumbnail {
-    width: 120px; /* Ancho fijo para las miniaturas */
+    width: 200px; /* Ancho fijo para las miniaturas */
     height: auto; /* Mantiene la proporción de la imagen */
     margin: 5px; /* Espaciado entre las miniaturas */
 }
@@ -108,8 +108,8 @@ video {
 }
 
 .thumbnail {
-    width: 100px;
-    height: 70px;
+    width: 200px;
+    height: 160px;
     border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;

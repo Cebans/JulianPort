@@ -16,7 +16,14 @@ header {
 h1 {
     font-size: 2em;
 }
-
+#contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: justify;
+}
 section {
     width: 80%;
     margin: 0 auto;
