@@ -64,4 +64,3 @@ function expandImage(image) {
 function closeOverlay() {
     document.getElementById("overlay").style.display = "none";
 }
-
