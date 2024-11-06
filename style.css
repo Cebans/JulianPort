@@ -153,6 +153,35 @@ body {
     height: 40px;
     align-items: center;
 }
+/* Estilo del contenedor de habilidades */
+.habilidades {
+    margin-top: 40px; /* Espacio entre el perfil y las habilidades */
+    text-align: center; /* Centra el texto y los elementos dentro de la sección */
+}
+
+
+/* Estilo para el contenedor de las imágenes */
+.habilidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Menos espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a varias líneas */
+    margin-top: 20px; /* Espacio entre el botón y las imágenes */
+}
+
+/* Estilo de cada imagen de habilidad */
+.habilidad-img {
+    width: 60px; /* Tamaño reducido de las imágenes */
+    height: 60px; /* Tamaño reducido de las imágenes */
+    object-fit: contain; /* Asegura que las imágenes se ajusten correctamente */
+    border-radius: 12px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+}
+
+.habilidad-img:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra más suave para destacar la imagen */
+}
 
 /* Sección de Proyectos */
 #proyectos {
