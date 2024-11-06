@@ -37,6 +37,16 @@ section {
     text-align: justify; /* Texto justificado */
     line-height: 2;
 }
+#descripcion-proyecto .container {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+}
+
+#descripcion-proyecto .column {
+    flex: 1; /* Ocupa el mismo espacio en ambas columnas */
+    margin: 0; /* Elimina el margen interno */
+}
 
 ul {
     list-style-type: none;
@@ -65,18 +75,38 @@ ul li {
     justify-content: center;
     flex-wrap: wrap; /* Permite que los thumbnails se envuelvan en varias líneas */
     margin-top: 20px;
+    gap: 10px;
     
 }
 
 .thumbnail {
-    width: 120px;
+    width: 150px; /* Tamaño ajustable */
     height: auto;
     cursor: pointer;
-    margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
 .thumbnail:hover {
     transform: scale(1.1);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que el overlay esté sobre el contenido */
+}
+
+#overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px; /* Para bordes redondeados */
 }
 
 button {

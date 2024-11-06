@@ -13,7 +13,15 @@
     </header>
 
     <section id="video-principal">
-        <h2>Video del Proyecto</h2>
+        <h2 style="font-size: 2rem; /* Tamaño adecuado para pantallas grandes */
+        margin-bottom: 20px; /* Espaciado debajo del título */
+        color: #192c4e; /* Color que ya tienes definido */
+        font-weight: bold; /* Asegura que el título se vea fuerte y destacado */
+        text-align: center; /* Centra el título en la pantalla */
+        padding: 10px; /* Añade un poco de espacio alrededor del título */
+        background-color: #fff; /* Fondo blanco para darle contraste */
+        border-radius: 8px; /* Bordes redondeados para el título */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para hacer el título más prominente */">Video del Proyecto</h2>
         <video width="450" height="300" controls>
             <source src="../Vid/Animación de Personaje.mp4" type="video/mp4">
         </video>
@@ -84,10 +92,39 @@
                     max-height: 90%;
                 }
             </style>
+            
         </div>
     </section>
+    <section id="detalles">
+        <h2 style="font-size: 2rem; /* Tamaño adecuado para pantallas grandes */
+        margin-bottom: 20px; /* Espaciado debajo del título */
+        color: #192c4e; /* Color que ya tienes definido */
+        font-weight: bold; /* Asegura que el título se vea fuerte y destacado */
+        text-align: center; /* Centra el título en la pantalla */
+        padding: 10px; /* Añade un poco de espacio alrededor del título */
+        background-color: #fff; /* Fondo blanco para darle contraste */
+        border-radius: 8px; /* Bordes redondeados para el título */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para hacer el título más prominente */">Detalles del Proyecto</h2>
+        <ul>
+            <li><strong>Duración:</strong> 5 Segundos</li>
+            <li><strong>Técnica:</strong> Animación y modelado 3D</li>
+            <li><strong>Software:</strong> Blender </li>
+                <div class="image-container">
+                    <img src="../img/blender logo.png" alt="logo de krita">
+                </li>
+            <li><strong>Fecha de Finalización:</strong> Agosto 2024</li>
+        </ul>
+    </section>
     <section id="descripcion-proyecto">
-        <h2>Descripción del Proyecto</h2>
+        <h2 style="font-size: 2rem; /* Tamaño adecuado para pantallas grandes */
+        margin-bottom: 20px; /* Espaciado debajo del título */
+        color: #192c4e; /* Color que ya tienes definido */
+        font-weight: bold; /* Asegura que el título se vea fuerte y destacado */
+        text-align: center; /* Centra el título en la pantalla */
+        padding: 10px; /* Añade un poco de espacio alrededor del título */
+        background-color: #fff; /* Fondo blanco para darle contraste */
+        border-radius: 8px; /* Bordes redondeados para el título */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para hacer el título más prominente */">Descripción del Proyecto</h2>
         <div class="container">
             <div class="column" style="margin: 50 px;">
             <p >
@@ -102,19 +139,6 @@
         </div>
     </section>
 
-    <section id="detalles">
-        <h2>Detalles del Proyecto</h2>
-        <ul>
-            <li><strong>Duración:</strong> 5 Segundos</li>
-            <li><strong>Técnica:</strong> Animación y modelado 3D</li>
-            <li><strong>Software:</strong> Blender </li>
-                <div class="image-container">
-                    <img src="../img/blender logo.png" alt="logo de krita">
-                </li>
-            <li><strong>Fecha de Finalización:</strong> Agosto 2024</li>
-        </ul>
-    </section>
-
     <style>
         .image-container img {
             display: inline-block;
@@ -127,8 +151,6 @@
         }
     </style>
 
-    
-
     <footer>
         <p>© 2024 Julián Rodríguez - Proyecto de Ilustración 3D</p>
     </footer>
@@ -138,21 +160,17 @@
     </div>
     
     <script>
-        function changeVideo(videoSrc) {
-            document.getElementById("main-video").src = videoSrc;
-            document.getElementById("main-video").play();
-        }
-    
-        function expandImage(image) {
+       function expandImage(button) {
             const overlay = document.getElementById("overlay");
             const expandedImage = document.getElementById("expanded-image");
-    
-            expandedImage.src = image.src;
-            overlay.style.display = "flex";
+            const image = button.querySelector("img"); // Captura la imagen dentro del botón
+            
+            expandedImage.src = image.src; // Asigna la imagen al overlay
+            overlay.style.display = "flex"; // Muestra el overlay
         }
-    
+
         function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
+            document.getElementById("overlay").style.display = "none"; // Cierra el overlay
         }
     </script>
 

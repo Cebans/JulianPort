@@ -189,4 +189,65 @@ footer {
     color: white;
     padding: 10px;
     width: 80%;
+    
+}   
+/* Estilo general para las cajas */
+.caja {
+    background-color: #DDD; /* Fondo gris claro para las cajas */
+    border: 1px solid #ddd; /* Borde sutil alrededor de las cajas */
+    padding: 20px; /* Espaciado interno para que el contenido no toque los bordes */
+    margin-bottom: 20px; /* Espacio entre las cajas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de las cajas */
+}
+
+.caja h3 {
+    font-size: 1.25rem; /* Tamaño de fuente para los subtítulos */
+    color: #333; /* Color oscuro para los subtítulos */
+    margin-bottom: 10px; /* Espacio debajo de los subtítulos */
+}
+
+.caja p {
+    font-size: 1rem; /* Tamaño de fuente para los párrafos */
+    line-height: 1.6; /* Mejor lectura con interlineado mayor */
+    color: #555; /* Color más suave para el texto */
+}
+
+/* Estilo para el encabezado principal */
+#descripcion-proyecto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #192c4e;
+}
+
+/* Espaciado entre el encabezado y el contenido */
+#descripcion-proyecto {
+    padding: 20px;
+}
+#descripcion-proyecto h2 {
+    font-size: 2rem; /* Tamaño adecuado para pantallas grandes */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    color: #192c4e; /* Color que ya tienes definido */
+    font-weight: bold; /* Asegura que el título se vea fuerte y destacado */
+    text-align: center; /* Centra el título en la pantalla */
+    padding: 10px; /* Añade un poco de espacio alrededor del título */
+    background-color: #fff; /* Fondo blanco para darle contraste */
+    border-radius: 8px; /* Bordes redondeados para el título */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para hacer el título más prominente */
+}
+
+/* Asegura que en pantallas pequeñas el título se vea bien */
+@media (max-width: 768px) {
+    #descripcion-proyecto h2 {
+        font-size: 1.5rem; /* Reduce el tamaño en pantallas pequeñas */
+        padding: 8px; /* Ajusta el espaciado para no recargar la pantalla */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #descripcion-proyecto h2 {
+        font-size: 1.2rem; /* Reduce aún más el tamaño del título */
+        padding: 5px; /* Menos espaciado para dispositivos pequeños */
+    }
 }
