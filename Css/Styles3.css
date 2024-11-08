@@ -108,8 +108,8 @@ video {
 }
 
 .thumbnail {
-    width: 200px;
-    height: 160px;
+    width: 150px;
+    height: 80px;
     border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;
