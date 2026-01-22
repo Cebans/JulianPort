@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+    background-color: #008120; /* Color de fondo verde */
+    color: rgb(0, 0, 0); /* Color del texto blanco */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e3fc02;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#descripcion-proyecto p {
+    text-align: justify; /* Texto justificado */
+    line-height: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+#video-principal {
+    text-align: center;
+    padding: 20px;
+}
+video {
+    width: 100%;
+    height: auto; /* Mantiene la proporción del video */
+}
+
+.video-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#thumbnail-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las miniaturas se muevan a la siguiente línea si no hay suficiente espacio */
+    justify-content: center; /* Centra las miniaturas */
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 200px; /* Ancho fijo para las miniaturas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 5px; /* Espaciado entre las miniaturas */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10; /* Asegúrate de que esté por encima de la imagen */
+}
+
+#video-principal video {
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+/* Estilo de los thumbnails */
+#thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .thumbnail {
+        width: 80px; /* Reduce el tamaño de las miniaturas en pantallas más pequeñas */
+    }
+
+    .social-icon {
+        width: 100px; /* Ajusta el tamaño del icono social */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del encabezado en pantallas muy pequeñas */
+    }
+
+    video {
+        width: 100%; /* Asegúrate de que el video ocupe todo el ancho en móviles */
+    }
+}
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Queda en la pantalla */
+    z-index: 1000; /* Se superpone a otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permite scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Máximo ancho */
+    max-height: 80%; /* Máxima altura */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+#caption {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    
+}   
+/* Estilo general para las cajas */
+.caja {
+    background-color: #dddddd; /* Fondo gris claro para las cajas */
+    border: 1px solid #ddd; /* Borde sutil alrededor de las cajas */
+    padding: 20px; /* Espaciado interno para que el contenido no toque los bordes */
+    margin-bottom: 20px; /* Espacio entre las cajas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de las cajas */
+}
+
+.caja h3 {
+    font-size: 1.25rem; /* Tamaño de fuente para los subtítulos */
+    color: #333; /* Color oscuro para los subtítulos */
+    margin-bottom: 10px; /* Espacio debajo de los subtítulos */
+}
+
+.caja p {
+    font-size: 1rem; /* Tamaño de fuente para los párrafos */
+    line-height: 1.6; /* Mejor lectura con interlineado mayor */
+    color: #555; /* Color más suave para el texto */
+}
+
+/* Estilo para el encabezado principal */
+#descripcion-proyecto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #192c4e;
+}
+
+/* Espaciado entre el encabezado y el contenido */
+#descripcion-proyecto {
+    padding: 20px;
+}
+#descripcion-proyecto h2 {
+    font-size: 2rem; /* Tamaño adecuado para pantallas grandes */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    color: #000000; /* Color que ya tienes definido */
+    font-weight: bold; /* Asegura que el título se vea fuerte y destacado */
+    text-align: center; /* Centra el título en la pantalla */
+    padding: 10px; /* Añade un poco de espacio alrededor del título */
+    background-color: #fff; /* Fondo blanco para darle contraste */
+    border-radius: 8px; /* Bordes redondeados para el título */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para hacer el título más prominente */
+}
+
+/* Asegura que en pantallas pequeñas el título se vea bien */
+@media (max-width: 768px) {
+    #descripcion-proyecto h2 {
+        font-size: 1.5rem; /* Reduce el tamaño en pantallas pequeñas */
+        padding: 8px; /* Ajusta el espaciado para no recargar la pantalla */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #descripcion-proyecto h2 {
+        font-size: 1.2rem; /* Reduce aún más el tamaño del título */
+        padding: 5px; /* Menos espaciado para dispositivos pequeños */
+    }
+}
